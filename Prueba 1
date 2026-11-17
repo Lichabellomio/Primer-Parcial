@@ -1,42 +1,36 @@
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-for n in numeros: 
-    print (n)
-Mama
+# Práctica de bucles, break/continue y operador módulo
+
+numeros = list(range(1, 18))
+for n in numeros:
+    print(n)
+
+
 def longitud(mi_lista):
+    """Cuenta los elementos de una lista sin usar len()."""
     cont = 0
     for _ in mi_lista:
         cont += 1
     return cont
+
+
 coleccion = [2, 4, 5, 7, 8, 9, 3, 4]
+print("Largo de la colección:", longitud(coleccion))
+
+# break: corta el recorrido al llegar al 7
 for e in coleccion:
     if e == 7:
         break
     print(e)
 
-coleccion = [2, 4, 5, 7, 8, 9, 3, 4]
-for e in coleccion:
-    if e == 9:
-        break
-    print(e)
-
-coleccion = [2, 4, 5, 7, 8, 9, 3, 4]
+# continue: saltea los números impares
 for e in coleccion:
     if e % 2 != 0:
         continue
     print(e)
 
-10 % 2
-
-a = 10
-b = 11
-a % 2
-b % 
-
+# Operador módulo: par o impar
 numero = 42
 if numero % 2 == 0:
-    print(f""{numero} es par."")
-
-numeroprimo = [a % a = a]
-while True = 
-    numeroprimo_input = input(ponerprimo)
-    if numeroprimo_input == 
+    print(f"{numero} es par.")
+else:
+    print(f"{numero} es impar.")
